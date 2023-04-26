@@ -54,7 +54,7 @@ if __name__ == '__main__':
     # Model:
     model = Sequential(name='Pavia_University')
 
-    model.add(Input(shape=X_train[0].shape, name='Input_Layer'))
+    model.add(Input(shape=X_train[1].shape, name='Input_Layer'))
     model.add(BatchNormalization())
     model.add(Dense(units=128, activation='relu', name='Layer1'))
     model.add(Dense(units=128, activation='relu', name='Layer2'))
