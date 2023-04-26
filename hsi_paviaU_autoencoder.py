@@ -16,7 +16,7 @@ if __name__ == '__main__':
 
     # Train data:
     X = df.iloc[:, :-1].values
-    X_scaled = minmax_scale(X)
+    X_scaled = minmax_scale(X, axis = 0)
     print(f"Train Data: {X.shape}")
 
     # Model:
